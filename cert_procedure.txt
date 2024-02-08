@@ -1,0 +1,9 @@
+
+GUIA: http://www.sistemasagiles.com.ar/trac/wiki/ManualPyAfipWs#Certificados
+Constatar CAE: https://serviciosweb.afip.gob.ar/genericos/comprobantes/cae.aspx
+
+openssl genrsa -out luma_key.key 2048
+openssl req --new --key luma_key.key --subj "/C=AR/O=Wuelfhis Asuaje/CN=Primer Certificado Luma2/serialNumber=CUIT 20955480903" -out luma2.csr
+este csr lo presente tanto en homologacion como en prod cada uno te da un crt respectivo
+
+

@@ -1,0 +1,7 @@
+*.csv
+/venv/
+.docker
+.vscode
+.env
+/pdfs/
+/cert/
